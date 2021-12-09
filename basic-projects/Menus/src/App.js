@@ -9,6 +9,7 @@ const getCategories = ['all', ...new Set(items.map((item) => item.category))];
 function App() {
   const [menu, setMenu] = useState(items);
   const [categories, setCategories] = useState(getCategories);
+
   // filter the menu based on category
   const filterMenu = (category) => {
     if (category === 'all') {
