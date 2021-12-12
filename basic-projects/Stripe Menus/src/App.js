@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
-import data from './data';
-import List from './List';
+import React from 'react';
+import Navbar from './Navbar';
+import Hero from './Hero';
+import Sidebar from './Sidebar';
+import Submenu from './Submenu';
 function App() {
   return (
-    <main>
-      <section className='container'>
-        <h3>0 Birthdays Today</h3>
-        <List />
-        <button>Clear All</button>
-      </section>
-    </main>
+    <>
+      <Navbar />
+      <Sidebar />
+      <Hero />
+      <Submenu />
+    </>
   );
 }
 
